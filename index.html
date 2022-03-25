@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Biglietto Treno</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+  </head>
+  <body>
+      
+    <h1 class="text-uppercase text-white text-center p-5">calcola il prezzo del tuo biglietto</h1>
+
+    <section class="form">
+        <div class="container bg_white rounded-3">
+            <!-- form -->
+            <div class="row row-cols-1 row-cols-md-3 justify-content-center pt-5">
+                <div class="col text-center">
+                    <p class="text-capitalize txt_red">dati anarafici</p>
+                    <input type="text" class="border_red">
+                </div>
+                <div class="col text-center">
+                    <p class="txt_red">Km da percorrere</p>
+                    <input type="number" class="border_red">
+                </div>
+                <div class="col text-center">
+                    <p class="txt_red">Fascia d'età</p>
+                    <select name="age" id="passenger_age" class="border_red">
+                        <option value="minor_18">Sono minorenne</option>
+                        <option value="over_65">Sono over 65</option>
+                        <option value="age_no_discount">Nessuna di quelle sopra</option>
+                    </select>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="btns text-center pb-5 pt-5">
+                <button class="rounded-pill">Genera</button>
+                <button class="rounded-pill">Annulla</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Import JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

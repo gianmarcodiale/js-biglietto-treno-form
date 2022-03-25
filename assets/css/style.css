@@ -1,0 +1,19 @@
+body {
+    background-color: crimson;
+    font-family: "Montserrat", sans-serif
+}
+
+/* background colors */
+.bg_white {
+    background-color: white;
+}
+
+/* text colors */
+.txt_red {
+    color: crimson;
+}
+
+/* border colors */
+.border_red {
+    border-color: crimson;
+}
