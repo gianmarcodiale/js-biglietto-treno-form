@@ -19,24 +19,24 @@
 
   </head>
   <body>
-      
-    <h1 class="text-uppercase text-white text-center p-5">calcola il prezzo del tuo biglietto</h1>
 
     <section class="form">
+        <h2 class="text-uppercase text-white text-center p-5">calcola il prezzo del tuo biglietto</h2>
+
         <div class="container bg_white rounded-3">
             <!-- form -->
             <div class="row row-cols-1 row-cols-md-3 justify-content-center pt-5">
                 <div class="col text-center">
                     <p class="text-capitalize txt_red">dati anarafici</p>
-                    <input type="text" class="border_red">
+                    <input type="text" class="border_red" id="my_name">
                 </div>
                 <div class="col text-center">
                     <p class="txt_red">Km da percorrere</p>
-                    <input type="number" class="border_red">
+                    <input type="number" class="border_red" id="km_to_travel_form">
                 </div>
                 <div class="col text-center">
                     <p class="txt_red">Fascia d'età</p>
-                    <select name="age" id="passenger_age" class="border_red">
+                    <select name="age" id="form_passenger_age" class="border_red">
                         <option value="minor_18">Sono minorenne</option>
                         <option value="over_65">Sono over 65</option>
                         <option value="age_no_discount">Nessuna di quelle sopra</option>
@@ -45,8 +45,43 @@
             </div>
             <!-- buttons -->
             <div class="btns text-center pb-5 pt-5">
-                <button class="rounded-pill">Genera</button>
+                <button class="rounded-pill" onclick="user_name()">Genera</button>
                 <button class="rounded-pill">Annulla</button>
+            </div>
+        </div>
+    </section>
+    <!-- end form section -->
+
+    <!-- start ticket section -->
+    <section class="ticket">
+        <h2 class="text-uppercase text-center text-white py-5">il tuo biglietto</h2>
+        <div class="container bg_white rounded-3">
+            <h2 class="text-uppercase">dettagli passegero</h2>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <h3 class="text-uppercase">nome passeggero</h3>
+                    <p id="passenger_name"></p>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Offerta</h6>
+                            <p id="discount"></p>
+                        </div>
+                        <div class="col">
+                            <h6>Carrozza</h6>
+                            <p id="wagon"></p>
+                        </div>
+                        <div class="col">
+                            <h6>Codice CP</h6>
+                            <p id="cp_code"></p>
+                        </div>
+                        <div class="col">
+                            <h6>Costo biglietto</h6>
+                            <p id="ticket_price"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
