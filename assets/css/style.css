@@ -8,6 +8,10 @@ body {
     background-color: white;
 }
 
+.bg_gray {
+    background-color: gray;
+}
+
 /* text colors */
 .txt_red {
     color: crimson;
