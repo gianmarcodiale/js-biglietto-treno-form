@@ -1,17 +1,35 @@
-// Definisco la funzione per estrapolare il nome
-function user_name() {
-    let passenger_name = document.getElementById("my_name").value;
-    document.getElementById("passenger_name").innerHTML = passenger_name;
+//creo la variabile con il bottone "genera"
+const button_click = document.getElementById("myBtn");
+
+//creo la funzione al click
+button_click.addEventListener('click',
+function() {
+    
+    //estrapolo il nome del passegero
+    let input_name = document.getElementById("my_name");
+    passenger_name = input_name.value;
+    console.log(passenger_name);
+    
+    //estrapolo l'età del passegero
+    let input_age = document.getElementById("form_passenger_age");
+    passenger_age = input_age.value;
+    console.log(passenger_age);
+
+    //estrapolo i km che deve percorrere
+    let input_km = document.getElementById("km_to_travel_form");
+    km_to_travel = parseInt(input_km.value);
+    console.log(km_to_travel);
+    
+    //creo la variabile con il prezzo standard del biglietto
+    let price_per_km = 0.21;
+    let standard_price = price_per_km * km_to_travel;
+    console.log(standard_price);
+
+    //creo la variabile con l'offerta
+    let discount = "Tariffa Standard"
+
+    //creo la condizione con per lo sconto
 }
 
-// creo variabili per il prezzo del biglietto
-function km() {
-    let ticket_price = document.getElementById("km_to_travel_form").value * 0.21;
-    document.getElementById("ticket_price").innerHTML = ticket_price;
-}
-
-function age() {
-    let user_age = document.getElementById("form_passenger_age").value;
-    document.getElementById("discount").innerHTML = user_age;
-}
-
+)
+    

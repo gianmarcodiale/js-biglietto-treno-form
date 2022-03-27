@@ -32,20 +32,20 @@
                 </div>
                 <div class="col text-center">
                     <p class="txt_red">Km da percorrere</p>
-                    <input type="number" class="border_red" id="km_to_travel_form">
+                    <input type="text" class="border_red" id="km_to_travel_form">
                 </div>
                 <div class="col text-center">
                     <p class="txt_red">Fascia d'età</p>
                     <select name="age" id="form_passenger_age" class="border_red">
                         <option value="Minore">Sono minorenne</option>
                         <option value="Over 65">Sono over 65</option>
-                        <option value="Nessuna">Nessuna di quelle sopra</option>
+                        <option value="Standard">Nessuna di quelle sopra</option>
                     </select>
                 </div>
             </div>
             <!-- buttons -->
             <div class="btns text-center pb-5 pt-5">
-                <button class="rounded-pill" onclick="user_name(), km(), age()">Genera</button>
+                <button class="rounded-pill" id="myBtn">Genera</button>
                 <button class="rounded-pill">Annulla</button>
             </div>
         </div>
